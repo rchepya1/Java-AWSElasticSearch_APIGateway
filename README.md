@@ -21,7 +21,7 @@ Prerequisites:
 1. Create an Elastic Search domain in AWS - [Documentation](https://aws.amazon.com/elasticsearch-service/getting-started/) 
 2. Create a API Gateway with Lambda function in AWS and configure right mapping templates to consume the parameters.
 
-	https://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started-with-lambda-integration.html
+	[Documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started-with-lambda-integration.html)
 	
 	Make a simple HelloWorld test to check the configurations and connectivity.
 	Update the Gateway by creating an API and a resource and configure the Method Executions like how is request consumed, integrated with Lambda and response generation.
