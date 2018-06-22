@@ -18,9 +18,11 @@ Architecture:
 API Gateway (Exposes the End Point URL) --> Lambda Function (Consumes request, queries backend and returns response) --> ElasticSearch (Where the actual data is present - Backend)
 
 Prerequisites:
-1. Create an Elastic Search domain in AWS. https://aws.amazon.com/elasticsearch-service/getting-started/
+1. Create an Elastic Search domain in AWS - [Documentation](https://aws.amazon.com/elasticsearch-service/getting-started/) 
 2. Create a API Gateway with Lambda function in AWS and configure right mapping templates to consume the parameters.
+
 	https://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started-with-lambda-integration.html
+	
 	Make a simple HelloWorld test to check the configurations and connectivity.
 	Update the Gateway by creating an API and a resource and configure the Method Executions like how is request consumed, integrated with Lambda and response generation.
 3. Configure the Lambda function to query on Elastic Search.
@@ -41,7 +43,9 @@ Logs can be checked in the monitoring tab of Lambda function
 
 URLs:
 ElasticSearch Endpoint : https://search-awselasticsearch-rohith-lqottp4vgjrlzbexoggeth5rxa.us-east-1.es.amazonaws.com (Internally used in the code)
+
 Kibana: https://search-awselasticsearch-rohith-lqottp4vgjrlzbexoggeth5rxa.us-east-1.es.amazonaws.com/_plugin/kibana/
+
 API Gateway URL: https://8f004003g2.execute-api.us-east-1.amazonaws.com/prod/AWSElasticSearch_personalCapital
 
 
