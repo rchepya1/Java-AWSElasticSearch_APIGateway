@@ -44,6 +44,7 @@ ElasticSearch Endpoint : https://search-awselasticsearch-rohith-lqottp4vgjrlzbex
 Kibana: https://search-awselasticsearch-rohith-lqottp4vgjrlzbexoggeth5rxa.us-east-1.es.amazonaws.com/_plugin/kibana/
 API Gateway URL: https://8f004003g2.execute-api.us-east-1.amazonaws.com/prod/AWSElasticSearch_personalCapital
 
+
 Test:
 A Get request can be made using any REST client like postMan or an REST client chrome extension or as a URL in a browser on the API Gateway
 
@@ -51,5 +52,7 @@ Accepted params:
 	1. plan_name
 	2. sponsor_name
 	3. sponsor_state
+
 Single accepted param Example: https://8f004003g2.execute-api.us-east-1.amazonaws.com/prod/AWSElasticSearch_personalCapital?sponsor_name=SENTERTAINMENT TRAVEL, INC.
+
 Multiple accepted params: https://8f004003g2.execute-api.us-east-1.amazonaws.com/prod/AWSElasticSearch_personalCapital?plan_name=SENTERTAINMENT%20TRAVEL,%20INC.%20401K%20PROFIT%20SHARING%20PLAN&SPONSOR_DFE_NAME=SENTERTAINMENT%20TRAVEL,%20INC.
