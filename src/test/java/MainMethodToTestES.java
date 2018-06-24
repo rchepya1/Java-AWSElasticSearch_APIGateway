@@ -13,6 +13,9 @@ import org.junit.runner.notification.Failure;
  * Created by rohith on 6/22/18.
  */
 
+/**
+ * Tests to directly call Elastic Search and API Gateway(and internally call Elastic search) to return the response and print it.
+ */
 public class MainMethodToTestES {
 
     @Test
@@ -29,8 +32,6 @@ public class MainMethodToTestES {
             URL obj = new URL(url);
             System.out.println(url);
             HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-            //con.setConnectTimeout(100000);
-            //con.setReadTimeout(100000);
             con.setRequestMethod("GET");
             BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
             String inputLine;
