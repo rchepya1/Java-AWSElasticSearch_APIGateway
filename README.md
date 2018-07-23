@@ -52,6 +52,6 @@ Accepted params:
 	2. sponsor_name
 	3. sponsor_state
 
-Single accepted param Example: <finalAPIGatewayUrl>?sponsor_name=SENTERTAINMENT+TRAVEL%2C+INC.
+Single accepted param Example: <"finalAPIGatewayUrl">?sponsor_name=SENTERTAINMENT+TRAVEL%2C+INC.
 
-Multiple accepted params: <finalAPIGatewayUrl>?plan_name=SENTERTAINMENT%20TRAVEL,%20INC.%20401K%20PROFIT%20SHARING%20PLAN&SPONSOR_DFE_NAME=SENTERTAINMENT%20TRAVEL,%20INC.
+Multiple accepted params: <"finalAPIGatewayUrl">?plan_name=SENTERTAINMENT%20TRAVEL,%20INC.%20401K%20PROFIT%20SHARING%20PLAN&SPONSOR_DFE_NAME=SENTERTAINMENT%20TRAVEL,%20INC.
