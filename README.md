@@ -37,11 +37,11 @@ Code:
 Logs can be checked in the monitoring tab of Lambda function
 
 URLs:
-ElasticSearch Endpoint : https://search-awselasticsearch-rohith-lqottp4vgjrlzbexoggeth5rxa.us-east-1.es.amazonaws.com (Internally used in the code)
+ElasticSearch Endpoint : Will be available once ElasticSearch Domain is created (Internally used in the code)
 
-Kibana: https://search-awselasticsearch-rohith-lqottp4vgjrlzbexoggeth5rxa.us-east-1.es.amazonaws.com/_plugin/kibana/
+Kibana: Url is exposed on on the overview page of the cluster created above
 
-API Gateway URL: https://8f004003g2.execute-api.us-east-1.amazonaws.com/prod/AWSElasticSearch_personalCapital
+API Gateway URL: Will be available once API Gateway is created. Will be used as the final URL to hit
 
 
 Test:
@@ -52,6 +52,6 @@ Accepted params:
 	2. sponsor_name
 	3. sponsor_state
 
-Single accepted param Example: https://8f004003g2.execute-api.us-east-1.amazonaws.com/prod/AWSElasticSearch_personalCapital?sponsor_name=SENTERTAINMENT+TRAVEL%2C+INC.
+Single accepted param Example: <finalAPIGatewayUrl>?sponsor_name=SENTERTAINMENT+TRAVEL%2C+INC.
 
-Multiple accepted params: https://8f004003g2.execute-api.us-east-1.amazonaws.com/prod/AWSElasticSearch_personalCapital?plan_name=SENTERTAINMENT%20TRAVEL,%20INC.%20401K%20PROFIT%20SHARING%20PLAN&SPONSOR_DFE_NAME=SENTERTAINMENT%20TRAVEL,%20INC.
+Multiple accepted params: <finalAPIGatewayUrl>?plan_name=SENTERTAINMENT%20TRAVEL,%20INC.%20401K%20PROFIT%20SHARING%20PLAN&SPONSOR_DFE_NAME=SENTERTAINMENT%20TRAVEL,%20INC.

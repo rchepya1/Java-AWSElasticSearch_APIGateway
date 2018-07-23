@@ -69,7 +69,7 @@ public class ElasticSearchService implements RequestStreamHandler {
 
             String inputParamsToString = "Input Params: " + "plan_name: " + plan_name + " sponsor_name: " + sponsor_name + " sponsor_state: " + sponsor_state + "\n";
             //Actual URL of the Elastic Search domain
-            String url = "https://search-awselasticsearch-rohith-lqottp4vgjrlzbexoggeth5rxa.us-east-1.es.amazonaws.com/plans/_search?q=";
+            String url = ""; // final Url of ElasticSearch created
             String planNameQuery = "PLAN_NAME:\"";
             String sponsorNameQuery = "SPONSOR_DFE_NAME:\"";
             String sponsorStateQuery = "SPONS_DFE_MAIL_US_STATE:\"";
@@ -88,7 +88,6 @@ public class ElasticSearchService implements RequestStreamHandler {
                 } catch (UnsupportedEncodingException e) {
                     e.printStackTrace();
                 }
-
             }
             if (sponsor_state != null) {
                 try {

@@ -21,7 +21,7 @@ public class MainMethodToTestES {
     @Test
     public void elasticSearchTest() {
         StringBuffer response = new StringBuffer();
-        String url = "https://search-awselasticsearch-rohith-lqottp4vgjrlzbexoggeth5rxa.us-east-1.es.amazonaws.com/plans/_search?q=";
+        String url = ""; // final URL of AWS ElasticSearch
         try {
             url += "PLAN_NAME:\"" + URLEncoder.encode("MICHAEL G. BLAKE & ASSOC. 401K PROFIT SHARING PLAN", "UTF-8") + "\"";
         } catch (UnsupportedEncodingException e) {
@@ -51,7 +51,7 @@ public class MainMethodToTestES {
     public void apiGatewayTest() {
         {
             StringBuffer response = new StringBuffer();
-            String url = "https://8f004003g2.execute-api.us-east-1.amazonaws.com/prod/AWSElasticSearch_personalCapital";
+            String url = ""; // final URL of API Gateway created
             try {
                 url += "?" + "plan_name=" + URLEncoder.encode("MICHAEL G. BLAKE & ASSOC. 401K PROFIT SHARING PLAN", "UTF-8");
             } catch (UnsupportedEncodingException e) {
